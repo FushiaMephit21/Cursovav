@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/mainStyle.css">
+</head>
+<body>
+<table>
+    <tr>
+        <th>id</th>
+        <th>idPers</th>
+        <th>name</th>
+        <th>dateOfBirth</th>
+        <th>male</th>
+        <th>naukzvannya</th>
+        <th>attachment</th>
+    </tr>
+
+    <tr th:each="ottolaringologs : ${ottolaringologsList}">
+        <form th:action="@{/ottolaringologsList}" th:object="${ottolaringologs}" method="post">
+            <td style="border-left: 2px solid #040014"><input type="number" th:value="${ottolaringologs.id}" name="id" readonly/></td>
+
+            <td><input type="number" th:value="${ottolaringologs.idPers}" name="idPers"/></td>
+            <td><input type="text" th:value="${ottolaringologs.name}" name="name"/></td>
+            <td><input type="text" th:value="${ottolaringologs.dateOfBirth}" name="dateOfBirth"/></td>
+            <td><input type="number" th:value="${ottolaringologs.male}" name="male"/></td>
+            <td><input type="text" th:value="${ottolaringologs.naukzvannya}" name="naukzvannya"/></td>
+            <td><input type="number" th:value="${ottolaringologs.attachment}" name="attachment"/></td>
+            <td class="ButtonCell">
+                <button type="submit" name="action" value="save" class="BluBtn">Save</button>
+            </td>
+            <td class="ButtonCell">
+                <button type="submit" name="action" value="delete" class="RedBtn">Delete</button>
+            </td>
+        </form>
+
+    </tr>
+
+    <form th:action="@{/ottolaringologsList}" th:object="${ottolaringologsEntity}" method="post">
+        <tr>
+            <td style="border-left: 2px solid #040014">
+                <input type="number" th:value="${ottolaringologsEntity.id}" name="id"/></td>
+            <td>                <input type="number" th:value="${ottolaringologsEntity.idPers}" name="idPers"/></td>
+            <td>                <input type="text" th:value="${ottolaringologsEntity.name}" name="name"/></td>
+            <td>                <input type="text" th:value="${ottolaringologsEntity.dateOfBirth}" name="dateOfBirth"/></td>
+            <td>                <input type="number" th:value="${ottolaringologsEntity.male}" name="male"/></td>
+            <td>                <input type="text" th:value="${ottolaringologsEntity.naukzvannya}" name="naukzvannya"/></td>
+            <td>                <input type="number" th:value="${ottolaringologsEntity.attachment}" name="attachment"/></td>
+            <td class="ButtonCell">
+                <button type="submit" name="action" value="add" class="BluBtn LastBtn">Add</button>
+            </td>
+        <tr/>
+
+    </form>
+</table>
+</body>
+</html>

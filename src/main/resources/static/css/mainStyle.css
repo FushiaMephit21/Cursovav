@@ -1,0 +1,77 @@
+html, body {
+    border: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+* {
+    font-family: sans-serif;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tbody:first-child th {
+    border: 1px solid #dee2e6;
+    border-top: 10px solid #dee2e6;
+}
+
+td {
+    border: 1px solid #dee2e6;
+    padding: 1%;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+input {
+    background: none;
+    border: 1px solid #dee2e6;
+    border-radius: 6%;
+    width: 90%;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10vh;
+}
+
+h1 {
+    margin: 2vh;
+}
+
+ul li {
+    list-style-type: none;
+    color: black;
+    padding: 1vw;
+    width: 100%;
+    margin-left: -3vw;
+    border-top: 1px solid #dee2e6;
+    transition: 0.1s;
+}
+
+ul li:last-child {
+    border-bottom: 1px solid #dee2e6;
+}
+
+ul li:hover {
+    border-top: 5px solid #dee2e6;
+}
+
+.button_menu {
+    border: 3px solid black;
+    border-radius: 10% 10% 50%;
+    color: black;
+    font-size: 300%;
+    text-align: center;
+    cursor: pointer;
+}

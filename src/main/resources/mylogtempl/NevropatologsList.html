@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/mainStyle.css">
+</head>
+<body>
+<table>
+    <tr>
+        <th>id</th>
+        <th>idPers</th>
+        <th>name</th>
+        <th>dateOfBirth</th>
+        <th>male</th>
+        <th>attachment</th>
+        <th>naukzvannya</th>
+        <th>trivalishavidpustka</th>
+    </tr>
+
+    <tr th:each="nevropatologs : ${nevropatologsList}">
+        <form th:action="@{/nevropatologsList}" th:object="${nevropatologs}" method="post">
+            <td style="border-left: 2px solid #040014"><input type="number" th:value="${nevropatologs.id}" name="id" readonly/></td>
+
+            <td><input type="number" th:value="${nevropatologs.idPers}" name="idPers"/></td>
+            <td><input type="text" th:value="${nevropatologs.name}" name="name"/></td>
+            <td><input type="text" th:value="${nevropatologs.dateOfBirth}" name="dateOfBirth"/></td>
+            <td><input type="number" th:value="${nevropatologs.male}" name="male"/></td>
+            <td><input type="number" th:value="${nevropatologs.attachment}" name="attachment"/></td>
+            <td><input type="text" th:value="${nevropatologs.naukzvannya}" name="naukzvannya"/></td>
+            <td><input type="number" th:value="${nevropatologs.trivalishavidpustka}" name="trivalishavidpustka"/></td>
+            <td class="ButtonCell">
+                <button type="submit" name="action" value="save" class="BluBtn">Save</button>
+            </td>
+            <td class="ButtonCell">
+                <button type="submit" name="action" value="delete" class="RedBtn">Delete</button>
+            </td>
+        </form>
+
+    </tr>
+
+    <form th:action="@{/nevropatologsList}" th:object="${nevropatologsEntity}" method="post">
+        <tr>
+            <td style="border-left: 2px solid #040014">
+                <input type="number" th:value="${nevropatologsEntity.id}" name="id"/></td>
+            <td>                <input type="number" th:value="${nevropatologsEntity.idPers}" name="idPers"/></td>
+            <td>                <input type="text" th:value="${nevropatologsEntity.name}" name="name"/></td>
+            <td>                <input type="text" th:value="${nevropatologsEntity.dateOfBirth}" name="dateOfBirth"/></td>
+            <td>                <input type="number" th:value="${nevropatologsEntity.male}" name="male"/></td>
+            <td>                <input type="number" th:value="${nevropatologsEntity.attachment}" name="attachment"/></td>
+            <td>                <input type="text" th:value="${nevropatologsEntity.naukzvannya}" name="naukzvannya"/></td>
+            <td>                <input type="number" th:value="${nevropatologsEntity.trivalishavidpustka}" name="trivalishavidpustka"/></td>
+            <td class="ButtonCell">
+                <button type="submit" name="action" value="add" class="BluBtn LastBtn">Add</button>
+            </td>
+        <tr/>
+
+    </form>
+</table>
+</body>
+</html>

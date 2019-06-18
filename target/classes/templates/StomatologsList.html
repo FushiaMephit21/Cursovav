@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" media="all" href="css/mainStyle.css">
+</head>
+<body>
+<table>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+    </tr>
+
+    <tr th:each="stomatologs : ${stomatologsList}">
+        <form th:action="@{/stomatologsList}" th:object="${stomatologs}" method="post">
+            <td style="border-left: 2px solid #040014"><input type="number" th:value="${stomatologs.id}" name="id" readonly/></td>
+
+            <td><input type="text" th:value="${stomatologs.name}" name="name"/></td>
+            <td><input type="text" th:value="${stomatologs.date_of_birth}" name="date_of_birth"/></td>
+            <td><input type="text" th:value="${stomatologs.male}" name="male"/></td>
+            <td><input type="text" th:value="${stomatologs.attachment}" name="attachment"/></td>
+            <td><input type="text" th:value="${stomatologs.naukzvannya}" name="naukzvannya"/></td>
+            <td><input type="text" th:value="${stomatologs.count_operations}" name="count_operations"/></td>
+            <td><input type="text" th:value="${stomatologs.count_fatal_operations}" name="count_fatal_operations"/></td>
+            <td><input type="text" th:value="${stomatologs.kf_zarplata}" name="kf_zarplata"/></td>
+            <td class="ButtonCell">
+                <button type="submit" name="action" value="save" class="BluBtn">Save</button>
+            </td>
+            <td class="ButtonCell">
+                <button type="submit" name="action" value="delete" class="RedBtn">Delete</button>
+            </td>
+        </form>
+
+    </tr>
+
+    <form th:action="@{/stomatologsList}" th:object="${stomatologsEntity}" method="post">
+        <tr>
+            <td style="border-left: 2px solid #040014">
+                <input type="number" th:value="${stomatologsEntity.id}" name="id"/></td>
+            <td>                <input type="text" th:value="${stomatologsEntity.name}" name="name"/></td>
+            <td><input type="text" th:value="${stomatologs.date_of_birth}" name="date_of_birth"/></td>
+            <td><input type="text" th:value="${stomatologs.male}" name="male"/></td>
+            <td><input type="text" th:value="${stomatologs.attachment}" name="attachment"/></td>
+            <td><input type="text" th:value="${stomatologs.naukzvannya}" name="naukzvannya"/></td>
+            <td><input type="text" th:value="${stomatologs.count_operations}" name="count_operations"/></td>
+            <td><input type="text" th:value="${stomatologs.count_fatal_operations}" name="count_fatal_operations"/></td>
+            <td><input type="text" th:value="${stomatologs.kf_zarplata}" name="kf_zarplata"/></td>
+            <td class="ButtonCell">
+                <button type="submit" name="action" value="add" class="BluBtn LastBtn">Add</button>
+            </td>
+        <tr/>
+
+    </form>
+</table>
+</body>
+</html>
