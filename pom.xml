@@ -80,7 +80,7 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupid>org.apache.maven.plugins</groupId>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
                     <execution>
