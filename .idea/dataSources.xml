@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="jdbc:mysql://mysql://b40ba1452cbd98:aafb62b2@eu-cdbr-west-02.cleardb.net/heroku_de3e47020e75ec3?reconnect=true:3306/heroku_de3e47020e75ec3" uuid="d9f0f64e-6620-4972-bc5a-19321eaa5277">
+    <data-source source="LOCAL" name="bqxffvrc0dpvaok9@vlvlnl1grfzh34vj.chr7pe7iynqr.eu-west-1.rds.amazonaws.com" uuid="d9f0f64e-6620-4972-bc5a-19321eaa5277">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://mysql://b40ba1452cbd98:aafb62b2@eu-cdbr-west-02.cleardb.net/heroku_de3e47020e75ec3?reconnect=true:3306/heroku_de3e47020e75ec3</jdbc-url>
+      <jdbc-url>jdbc:mysql://vlvlnl1grfzh34vj.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/bqxffvrc0dpvaok9?reconnect=true</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />
