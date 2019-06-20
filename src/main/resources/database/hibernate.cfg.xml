@@ -4,9 +4,9 @@
     "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
   <session-factory>
-    <property name="connection.url">jdbc:mysql://gdn129j6805weghk:wt6kgvtpf9kxfb8m@vlvlnl1grfzh34vj.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/bqxffvrc0dpvaok9</property>
+    <property name="connection.url">jdbc:mysql://vlvlnl1grfzh34vj.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/bqxffvrc0dpvaok9?reconnect=true</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-      <mapping class="ua.nic.Cursova.model.ArmamentEntity"/>
+    <mapping class="ua.nic.Cursova.model.ArmamentEntity"/>
     <mapping class="ua.nic.Cursova.model.ArmyEntity"/>
     <mapping class="ua.nic.Cursova.model.ArtilleryEntity"/>
     <mapping class="ua.nic.Cursova.model.AutomxaticweaponEntity"/>
@@ -59,6 +59,25 @@
     <mapping class="ua.nic.Cursova.model.StomatologsEntity"/>
     <mapping class="ua.nic.Cursova.model.SurgeonsEntity"/>
     <mapping class="ua.nic.Cursova.model.TerapevtsEntity"/>
+    <mapping class="java.model.CorpusEntity"/>
+    <mapping class="java.model.DepartmentEntity"/>
+    <mapping class="java.model.DogtorsEntity"/>
+    <mapping class="java.model.HinegologsEntity"/>
+    <mapping class="java.model.HospitalsEntity"/>
+    <mapping class="java.model.LabaratoryEntity"/>
+    <mapping class="java.model.MedicalinstitutionsEntity"/>
+    <mapping class="java.model.NaukzvannyaEntity"/>
+    <mapping class="java.model.NevropatologsEntity"/>
+    <mapping class="java.model.OttolaringologsEntity"/>
+    <mapping class="java.model.PatientsEntity"/>
+    <mapping class="java.model.PolikliniksEntity"/>
+    <mapping class="java.model.PostsEntity"/>
+    <mapping class="java.model.ProfileslabaratoryEntity"/>
+    <mapping class="java.model.RentgenologsEntity"/>
+    <mapping class="java.model.StaffsEntity"/>
+    <mapping class="java.model.StomatologsEntity"/>
+    <mapping class="java.model.SurgeonsEntity"/>
+    <mapping class="java.model.TerapevtsEntity"/>
 
     <!-- DB schema will be updated if needed -->
     <!-- <property name="hbm2ddl.auto">update</property> -->

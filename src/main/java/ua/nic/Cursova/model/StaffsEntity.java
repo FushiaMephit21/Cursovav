@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.sql.Date;
 
 @Entity
-@Table(name = "staffs", schema = "cursova", catalog = "")
+@Table(name = "staffs", schema = "bqxffvrc0dpvaok9", catalog = "")
 public class StaffsEntity {
     private long id;
     private String name;
@@ -34,7 +34,7 @@ public class StaffsEntity {
     }
 
     @Basic
-    @Column(name = "dateOfBirth", nullable = true)
+    @Column(name = "date_of_birth", nullable = true)
     public Date getDateOfBirth() {
         return dateOfBirth;
     }

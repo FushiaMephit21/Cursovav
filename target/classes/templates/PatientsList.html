@@ -16,6 +16,7 @@
         <th>historyDisease</th>
         <th>countOperations</th>
         <th>countAppointment</th>
+        <th>fromReferral</th>
         <th>dogtor</th>
         <th>attachment</th>
     </tr>
@@ -30,6 +31,7 @@
             <td><input type="text" th:value="${patients.historyDisease}" name="historyDisease"/></td>
             <td><input type="number" th:value="${patients.countOperations}" name="countOperations"/></td>
             <td><input type="number" th:value="${patients.countAppointment}" name="countAppointment"/></td>
+            <td><input type="text" th:value="${patients.fromReferral}" name="fromReferral"/></td>
             <td><input type="number" th:value="${patients.dogtor}" name="dogtor"/></td>
             <td><input type="number" th:value="${patients.attachment}" name="attachment"/></td>
             <td class="ButtonCell">
@@ -52,6 +54,7 @@
             <td>                <input type="text" th:value="${patientsEntity.historyDisease}" name="historyDisease"/></td>
             <td>                <input type="number" th:value="${patientsEntity.countOperations}" name="countOperations"/></td>
             <td>                <input type="number" th:value="${patientsEntity.countAppointment}" name="countAppointment"/></td>
+            <td>                <input type="text" th:value="${patientsEntity.fromReferral}" name="fromReferral"/></td>
             <td>                <input type="number" th:value="${patientsEntity.dogtor}" name="dogtor"/></td>
             <td>                <input type="number" th:value="${patientsEntity.attachment}" name="attachment"/></td>
             <td class="ButtonCell">

@@ -3,7 +3,7 @@ package ua.nic.Cursova.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "corpus", schema = "cursova", catalog = "")
+@Table(name = "corpus", schema = "bqxffvrc0dpvaok9", catalog = "")
 public class CorpusEntity {
     private long id;
     private String number;

@@ -3,7 +3,7 @@ package ua.nic.Cursova.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "department", schema = "cursova", catalog = "")
+@Table(name = "department", schema = "bqxffvrc0dpvaok9", catalog = "")
 public class DepartmentEntity {
     private long id;
     private Long idMedInst;
@@ -24,7 +24,7 @@ public class DepartmentEntity {
     }
 
     @Basic
-    @Column(name = "id_medInst", nullable = true)
+    @Column(name = "id_med_inst", nullable = true)
     public Long getIdMedInst() {
         return idMedInst;
     }
@@ -64,7 +64,7 @@ public class DepartmentEntity {
     }
 
     @Basic
-    @Column(name = "countWard", nullable = true)
+    @Column(name = "count_ward", nullable = true)
     public Long getCountWard() {
         return countWard;
     }
@@ -74,7 +74,7 @@ public class DepartmentEntity {
     }
 
     @Basic
-    @Column(name = "countBeds", nullable = true)
+    @Column(name = "count_beds", nullable = true)
     public Long getCountBeds() {
         return countBeds;
     }

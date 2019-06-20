@@ -16,7 +16,7 @@
         <th>male</th>
         <th>attachment</th>
         <th>naukzvannya</th>
-        <th>trivalishaVidpustka</th>
+        <th>trivalishavidpustka</th>
     </tr>
 
     <tr th:each="nevropatologs : ${nevropatologsList}">
@@ -29,7 +29,7 @@
             <td><input type="number" th:value="${nevropatologs.male}" name="male"/></td>
             <td><input type="number" th:value="${nevropatologs.attachment}" name="attachment"/></td>
             <td><input type="text" th:value="${nevropatologs.naukzvannya}" name="naukzvannya"/></td>
-            <td><input type="number" th:value="${nevropatologs.trivalishaVidpustka}" name="trivalishaVidpustka"/></td>
+            <td><input type="number" th:value="${nevropatologs.trivalishavidpustka}" name="trivalishavidpustka"/></td>
             <td class="ButtonCell">
                 <button type="submit" name="action" value="save" class="BluBtn">Save</button>
             </td>
@@ -50,7 +50,7 @@
             <td>                <input type="number" th:value="${nevropatologsEntity.male}" name="male"/></td>
             <td>                <input type="number" th:value="${nevropatologsEntity.attachment}" name="attachment"/></td>
             <td>                <input type="text" th:value="${nevropatologsEntity.naukzvannya}" name="naukzvannya"/></td>
-            <td>                <input type="number" th:value="${nevropatologsEntity.trivalishaVidpustka}" name="trivalishaVidpustka"/></td>
+            <td>                <input type="number" th:value="${nevropatologsEntity.trivalishavidpustka}" name="trivalishavidpustka"/></td>
             <td class="ButtonCell">
                 <button type="submit" name="action" value="add" class="BluBtn LastBtn">Add</button>
             </td>

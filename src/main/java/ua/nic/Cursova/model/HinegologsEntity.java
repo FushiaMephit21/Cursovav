@@ -3,7 +3,7 @@ package ua.nic.Cursova.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "hinegologs", schema = "cursova", catalog = "")
+@Table(name = "hinegologs", schema = "bqxffvrc0dpvaok9", catalog = "")
 public class HinegologsEntity {
     private long id;
     private Long idPers;
@@ -46,7 +46,7 @@ public class HinegologsEntity {
     }
 
     @Basic
-    @Column(name = "dateOfBirth", nullable = true, length = 100)
+    @Column(name = "date_of_birth", nullable = true, length = 100)
     public String getDateOfBirth() {
         return dateOfBirth;
     }
@@ -86,7 +86,7 @@ public class HinegologsEntity {
     }
 
     @Basic
-    @Column(name = "countOperations", nullable = true)
+    @Column(name = "count_operations", nullable = true)
     public Long getCountOperations() {
         return countOperations;
     }
@@ -96,7 +96,7 @@ public class HinegologsEntity {
     }
 
     @Basic
-    @Column(name = "countFatalOperations", nullable = true)
+    @Column(name = "count_fatal_operations", nullable = true)
     public Long getCountFatalOperations() {
         return countFatalOperations;
     }

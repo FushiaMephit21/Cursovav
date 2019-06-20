@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.sql.Date;
 
 @Entity
-@Table(name = "patients", schema = "cursova", catalog = "")
+@Table(name = "patients", schema = "bqxffvrc0dpvaok9", catalog = "")
 public class PatientsEntity {
     private long id;
     private String name;
@@ -13,7 +13,6 @@ public class PatientsEntity {
     private String historyDisease;
     private Long countOperations;
     private Long countAppointment;
-    private String fromReferral;
     private Long dogtor;
     private Long attachment;
 
@@ -38,7 +37,7 @@ public class PatientsEntity {
     }
 
     @Basic
-    @Column(name = "dateOfBirth", nullable = true)
+    @Column(name = "date_of_birth", nullable = true)
     public Date getDateOfBirth() {
         return dateOfBirth;
     }
@@ -58,7 +57,7 @@ public class PatientsEntity {
     }
 
     @Basic
-    @Column(name = "HistoryDisease", nullable = true, length = -1)
+    @Column(name = "history_disease", nullable = true, length = -1)
     public String getHistoryDisease() {
         return historyDisease;
     }
@@ -68,7 +67,7 @@ public class PatientsEntity {
     }
 
     @Basic
-    @Column(name = "countOperations", nullable = true)
+    @Column(name = "count_operations", nullable = true)
     public Long getCountOperations() {
         return countOperations;
     }
@@ -78,23 +77,13 @@ public class PatientsEntity {
     }
 
     @Basic
-    @Column(name = "countAppointment", nullable = true)
+    @Column(name = "count_appointment", nullable = true)
     public Long getCountAppointment() {
         return countAppointment;
     }
 
     public void setCountAppointment(Long countAppointment) {
         this.countAppointment = countAppointment;
-    }
-
-    @Basic
-    @Column(name = "fromReferral", nullable = true, length = 100)
-    public String getFromReferral() {
-        return fromReferral;
-    }
-
-    public void setFromReferral(String fromReferral) {
-        this.fromReferral = fromReferral;
     }
 
     @Basic
@@ -134,7 +123,6 @@ public class PatientsEntity {
             return false;
         if (countAppointment != null ? !countAppointment.equals(that.countAppointment) : that.countAppointment != null)
             return false;
-        if (fromReferral != null ? !fromReferral.equals(that.fromReferral) : that.fromReferral != null) return false;
         if (dogtor != null ? !dogtor.equals(that.dogtor) : that.dogtor != null) return false;
         if (attachment != null ? !attachment.equals(that.attachment) : that.attachment != null) return false;
 
@@ -150,7 +138,6 @@ public class PatientsEntity {
         result = 31 * result + (historyDisease != null ? historyDisease.hashCode() : 0);
         result = 31 * result + (countOperations != null ? countOperations.hashCode() : 0);
         result = 31 * result + (countAppointment != null ? countAppointment.hashCode() : 0);
-        result = 31 * result + (fromReferral != null ? fromReferral.hashCode() : 0);
         result = 31 * result + (dogtor != null ? dogtor.hashCode() : 0);
         result = 31 * result + (attachment != null ? attachment.hashCode() : 0);
         return result;

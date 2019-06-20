@@ -3,7 +3,7 @@ package ua.nic.Cursova.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "rentgenologs", schema = "cursova", catalog = "")
+@Table(name = "rentgenologs", schema = "bqxffvrc0dpvaok9", catalog = "")
 public class RentgenologsEntity {
     private long id;
     private Long idPers;
@@ -13,7 +13,7 @@ public class RentgenologsEntity {
     private Long attachment;
     private String naukzvannya;
     private Double kfZarplata;
-    private Byte trivalishavidpustka;
+    private Byte trivalishaVidpustka;
 
     @Id
     @Column(name = "id", nullable = false)
@@ -46,7 +46,7 @@ public class RentgenologsEntity {
     }
 
     @Basic
-    @Column(name = "dateOfBirth", nullable = true, length = 100)
+    @Column(name = "date_of_birth", nullable = true, length = 100)
     public String getDateOfBirth() {
         return dateOfBirth;
     }
@@ -86,7 +86,7 @@ public class RentgenologsEntity {
     }
 
     @Basic
-    @Column(name = "kfZarplata", nullable = true, precision = 0)
+    @Column(name = "kf_zarplata", nullable = true, precision = 0)
     public Double getKfZarplata() {
         return kfZarplata;
     }
@@ -96,13 +96,13 @@ public class RentgenologsEntity {
     }
 
     @Basic
-    @Column(name = "trivalishavidpustka", nullable = true)
-    public Byte getTrivalishavidpustka() {
-        return trivalishavidpustka;
+    @Column(name = "trivalisha_vidpustka", nullable = true)
+    public Byte getTrivalishaVidpustka() {
+        return trivalishaVidpustka;
     }
 
-    public void setTrivalishavidpustka(Byte trivalishavidpustka) {
-        this.trivalishavidpustka = trivalishavidpustka;
+    public void setTrivalishaVidpustka(Byte trivalishaVidpustka) {
+        this.trivalishaVidpustka = trivalishaVidpustka;
     }
 
     @Override
@@ -120,7 +120,7 @@ public class RentgenologsEntity {
         if (attachment != null ? !attachment.equals(that.attachment) : that.attachment != null) return false;
         if (naukzvannya != null ? !naukzvannya.equals(that.naukzvannya) : that.naukzvannya != null) return false;
         if (kfZarplata != null ? !kfZarplata.equals(that.kfZarplata) : that.kfZarplata != null) return false;
-        if (trivalishavidpustka != null ? !trivalishavidpustka.equals(that.trivalishavidpustka) : that.trivalishavidpustka != null)
+        if (trivalishaVidpustka != null ? !trivalishaVidpustka.equals(that.trivalishaVidpustka) : that.trivalishaVidpustka != null)
             return false;
 
         return true;
@@ -136,7 +136,7 @@ public class RentgenologsEntity {
         result = 31 * result + (attachment != null ? attachment.hashCode() : 0);
         result = 31 * result + (naukzvannya != null ? naukzvannya.hashCode() : 0);
         result = 31 * result + (kfZarplata != null ? kfZarplata.hashCode() : 0);
-        result = 31 * result + (trivalishavidpustka != null ? trivalishavidpustka.hashCode() : 0);
+        result = 31 * result + (trivalishaVidpustka != null ? trivalishaVidpustka.hashCode() : 0);
         return result;
     }
 }

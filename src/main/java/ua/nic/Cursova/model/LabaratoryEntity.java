@@ -3,7 +3,7 @@ package ua.nic.Cursova.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "labaratory", schema = "cursova", catalog = "")
+@Table(name = "labaratory", schema = "bqxffvrc0dpvaok9", catalog = "")
 public class LabaratoryEntity {
     private long id;
     private Long attachment;
