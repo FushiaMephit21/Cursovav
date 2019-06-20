@@ -76,7 +76,7 @@
           <entry key="class" value="1" />
           <entry key="corpus" value="2" />
           <entry key="dogtors" value="1" />
-          <entry key="html" value="43" />
+          <entry key="html" value="44" />
           <entry key="java" value="33" />
           <entry key="patients" value="2" />
           <entry key="properties" value="7" />
@@ -89,7 +89,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Database Element" value="6" />
-          <entry key="HTML" value="43" />
+          <entry key="HTML" value="44" />
           <entry key="JAVA" value="33" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="7" />
@@ -139,11 +139,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="298">
               <caret line="73" column="72" selection-start-line="73" selection-start-column="72" selection-end-line="73" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/CorpusList.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -308,6 +317,14 @@
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+            <path>
+              <item name="Cursova" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Cursova" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -334,7 +351,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561071947341" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561072485902" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -392,8 +409,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CursovaApplication" />
         <item itemvalue="Application.GenerateCode" />
+        <item itemvalue="Spring Boot.CursovaApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -412,12 +429,12 @@
       <workItem from="1560867849972" duration="8077000" />
       <workItem from="1560887244257" duration="45000" />
       <workItem from="1561021338863" duration="2391000" />
-      <workItem from="1561069383193" duration="2563000" />
+      <workItem from="1561069383193" duration="3048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15753000" />
+    <option name="totallyTimeSpent" value="16238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -631,13 +648,6 @@
       </provider>
     </entry>
     <entry file="das://d9f0f64e-6620-4972-bc5a-19321eaa5277/schema/cursova/table/patients" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/CorpusList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/DepartmentList.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -833,6 +843,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="73" column="72" selection-start-line="73" selection-start-column="72" selection-end-line="73" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/CorpusList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
