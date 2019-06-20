@@ -18,26 +18,22 @@ public class CorpusService implements IEntityService {
     ICorpusRepository corpusRepository;
 
 
-    @Override
     public CorpusEntity getById(Long id) {
         log.info("In CorpusService getById{{}" + id);
         return corpusRepository.getOne(id);
     }
 
-    @Override
     public void save(Object corpus) {
         log.info("In CorpusService save{}" + corpus);
 
         corpusRepository.save((CorpusEntity) corpus);
     }
 
-    @Override
     public void delete(Long id) {
         log.info("In CorpusService delete{}" + id);
         corpusRepository.deleteById(id);
     }
 
-    @Override
     public List getAll() {
        return corpusRepository.findAll();
     }

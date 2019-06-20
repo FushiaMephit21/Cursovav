@@ -18,26 +18,22 @@ public class DogtorsService implements IEntityService {
     IDogtorsRepository dogtorsRepository;
 
 
-    @Override
     public DogtorsEntity getById(Long id) {
         log.info("In DogtorsService getById{{}" + id);
         return dogtorsRepository.getOne(id);
     }
 
-    @Override
     public void save(Object dogtors) {
         log.info("In DogtorsService save{}" + dogtors);
 
         dogtorsRepository.save((DogtorsEntity) dogtors);
     }
 
-    @Override
     public void delete(Long id) {
         log.info("In DogtorsService delete{}" + id);
         dogtorsRepository.deleteById(id);
     }
 
-    @Override
     public List getAll() {
        return dogtorsRepository.findAll();
     }
