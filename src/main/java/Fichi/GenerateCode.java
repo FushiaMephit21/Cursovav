@@ -334,7 +334,7 @@ public class GenerateCode {
                     "<head>\n" +
                     "    <meta charset=\"UTF-8\">\n" +
                     "    <title>Title</title>\n" +
-                    "    <link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"css/mainStyle.css\">\n" +
+                    "    <link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"css/mainStyle.css\">\n<script src=\"js/myscript.js\"></script>\n" +
                     "</head>\n" +
                     "<body>\n" +
                     "<table>\n" +
